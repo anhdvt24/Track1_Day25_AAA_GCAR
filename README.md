@@ -3,6 +3,7 @@
 > **Track 1 Day 27 Lab · 120 phút · Team AAA (2 người)**
 > **Bài nộp:** Stakeholder Map → Pitch & RACI → AI Team Design → Team Health & Growth Plan → Repo GitHub + 1 PDF ≤ 4 trang
 > **Tên nhóm:** **AAA**
+> **Trạng thái tổng:** ✅ **HOÀN TẤT** (đã push repo, xuất PDF, sẵn sàng nộp)
 
 ---
 
@@ -14,6 +15,50 @@
 | 2 | Đàm Quang Trung | 2A202602525 | Tech Lead / Front-end & DevOps |
 
 > **Team AAA** gồm 2 thành viên thay vì 3-5 theo yêu cầu đề bài — đã được phép ngoại lệ (xác nhận với giảng viên trước khi bắt đầu Lab).
+
+---
+
+## 📊 Trạng thái Task (Task Status)
+
+### Phase Lab Day 27 (120 phút)
+
+| # | Phase | Thời gian | Output | Trạng thái |
+|---|---|---|---|---|
+| 0 | Chốt phạm vi | 5 phút | Setup repo + README | ✅ Hoàn tất |
+| 1 | Stakeholder Map | 20 phút | `01-stakeholder-map.md` (10 stakeholder + 4 chiến lược) | ✅ Hoàn tất |
+| 2 | Pitch & RACI | 30 phút | `02-pitch-and-raci.md` (Pitch + RACI 12 việc) | ✅ Hoàn tất |
+| 3 | AI Team Design | 25 phút | `03-ai-team-design.md` (Hybrid + 6 capability gap) | ✅ Hoàn tất |
+| 4 | Team Health & Growth Plan | 25 phút | `04-team-health-growth-plan.md` (4 chiều + 3 actions) | ✅ Hoàn tất |
+| 5 | Tự kiểm & Nộp | 15 phút | `05-phase5-checklist.md` + `combined_markdown.pdf` + push repo | ✅ Hoàn tất |
+
+### Gate Checklist (đề bài yêu cầu)
+
+| Gate | Tiêu chí | Trạng thái |
+|---|---|---|
+| **Gate 1** | Stakeholder Map có ≥ 6 stakeholder cụ thể, có Influence×Interest + stance thực tế | ✅ 10 stakeholder |
+| **Gate 2** | Pitch "kết luận trước" + bằng chứng + small ask + 1 phản biện; RACI 12 việc có đúng 1 A | ✅ |
+| **Gate 3** | AI Team Design có lý do rõ ràng cho architecture; 6 capability gap với Hire/Outsource/Partner | ✅ Hybrid |
+| **Gate 4** | Team Health đủ 4 khía cạnh; Growth Plan ≤ 3 actions có owner + deadline + dấu hiệu hoàn thành | ✅ 3/3 |
+| **Gate 5** | Repo public + 1 PDF ≤ 4 trang + README đúng format | ✅ Đã push |
+
+### Action 30 ngày tới (sau Lab)
+
+| # | Hành động | Owner | Deadline | Trạng thái |
+|---|---|---|---|---|
+| **1** | Setup GitHub Action auto-deploy staging + enable Sentry | Thái Anh | Day 14 | ⬜ Chưa bắt đầu |
+| **2** | Hoàn tất 50% LMS-023 (chi nhánh + RBAC) | Trung | Day 14 | ⬜ Chưa bắt đầu |
+| **3** | Thêm RAG eval vào CI (faithfulness < 4.5/5 → fail) | Thái Anh | Day 21 | ⬜ Chưa bắt đầu |
+
+### Hành động tuần 1–2 (Stakeholder ưu tiên)
+
+| # | Hành động | Owner | Deadline | Trạng thái |
+|---|---|---|---|---|
+| S1 | Ping Admin Gcar xin intro luật sư | Thái Anh | Day 3 | ⬜ |
+| S2 | Email đăng ký merchant VNPay sandbox | Thái Anh | Day 4 | ⬜ |
+| S3 | Legal review checklist (12 điểm) | Trung | Day 5 | ⬜ |
+| S4 | Walkthrough 1 trang A4 cho Reviewer | Thái Anh | Day 7 | ⬜ |
+| S5 | Deploy IPN endpoint VNPay lên Vercel production | Trung | Day 7 | ⬜ |
+| S6 | Shadow 2h tại HN-01 với Reviewer | Trung | Day 10 | ⬜ |
 
 ---
 
@@ -55,13 +100,15 @@ Triển khai 2 ADR đang ở trạng thái **Proposed** (đã viết 2026-10-06,
 
 ```
 gcar-day27-lab/                          ← repo này (Team AAA)
-├── README.md                             ← (file này) Team + dự án + format
+├── README.md                             ← (file này) Team + dự án + Task Status
+├── 00-timeline.md                        ← Timeline tổng hợp tất cả mốc thời gian
 ├── 01-stakeholder-map.md                 ← Phase 1
 ├── 02-pitch-and-raci.md                  ← Phase 2
 ├── 03-ai-team-design.md                  ← Phase 3
 ├── 04-team-health-growth-plan.md         ← Phase 4
-└── deliverables/
-    └── gcar-day27-summary.pdf            ← PDF tóm tắt ≤ 4 trang
+├── 05-phase5-checklist.md                ← Phase 5
+├── combined_markdown.md                  ← Ghép 4 file để xuất PDF
+└── combined_markdown.pdf                 ← PDF ≤ 4 trang đã nộp
 ```
 
 ---
@@ -87,7 +134,9 @@ gcar-day27-lab/                          ← repo này (Team AAA)
 |---|---|---|
 | 0 — Chốt phạm vi | 5 phút | ✅ |
 | 1 — Stakeholder Map | 20 phút | ✅ |
-| 2 — Pitch & RACI | 30 phút | 🔜 |
-| 3 — AI Team Design | 25 phút | ⏳ |
-| 4 — Team Health & Growth Plan | 25 phút | ⏳ |
-| 5 — Tự kiểm & Nộp | 15 phút | ⏳ |
+| 2 — Pitch & RACI | 30 phút | ✅ |
+| 3 — AI Team Design | 25 phút | ✅ |
+| 4 — Team Health & Growth Plan | 25 phút | ✅ |
+| 5 — Tự kiểm & Nộp | 15 phút | ✅ |
+
+> ✅ **Bài Lab đã hoàn tất.** Trưởng nhóm copy link repo nộp theo mục 10 đề bài.
